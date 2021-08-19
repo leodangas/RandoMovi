@@ -1,0 +1,293 @@
+.movie-container {
+    background: black;
+    min-height: 100vh;
+    padding-top: 1rem;
+    .movie-wrapper {
+        padding-left: 7rem;
+        padding-right: 7rem;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .movie-image {
+            width: 25rem;
+            height: 33rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .movie-info {
+            width: 40rem;
+            margin-left: 2rem;
+            padding-top: 2rem;
+            overflow: hidden;
+            .movie-trailer {
+                margin-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            .movie-title-rating {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                .movie-title {
+                    width: 100%;
+                    overflow: hidden;
+                    word-break: break-word;
+                    h1 {
+                        color: white;
+                        font-size: 2.5rem;
+                    }
+                }
+                .rating {
+                    display: flex;
+                    align-items: center;
+                    h2 {
+                        color: white;
+                        margin-left: 0.5rem;
+                        font-size: 2rem;
+                        font-weight: 400;
+                    }
+                   .clip-star {
+                            margin-left: 1rem;
+                            background: gold;
+                            -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                                    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                            display: inline-block;
+                            height: 2rem;
+                            width: 2rem;
+                   }
+                }
+            }
+            .movie-release-length {
+                display: flex;
+                margin-top: 0.5rem;
+                h1 {
+                    color: white;
+                    opacity: 0.3;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+                h1:nth-child(2){
+                    margin-left: 0.5rem;
+                }
+                h1:nth-child(1) {
+                    border-right: 2px solid rgba(255, 255, 255, 0.7);
+                    padding-right: 0.5rem;
+                }
+            }
+            .overview-trailer {
+                display: flex;
+                margin-top: 2rem;
+                h1 {
+                    color: white;
+                    font-size: 1.4rem;
+                    opacity: 0.3;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                h1:nth-child(2) {
+                    margin-left: 5rem;
+                }
+                .active {
+                    opacity: 1;
+                    border-bottom: 5px solid #DC1112;
+                    padding-bottom: 0.2rem;
+                }
+            }
+            .movie-description {
+                display: flex;
+                justify-content: center;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                width: 40rem;
+                h1 {
+                    text-align: justify;
+                    line-height: 1.6;
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    width: 100%;
+                }
+            }
+            .movie-starring {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                h1 {
+                    color: white;
+                    opacity: 0.4;
+                    font-weight: 300;
+                    font-size: 1rem;
+                    width: 7rem;
+                }
+                h2 {
+                    color: white;
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+                .genres {
+                    display: flex;
+                    h2 {
+                        border-right: 1px solid white;
+                        padding-right: 1rem;
+                        margin-right: 1rem;
+                        overflow: hidden;
+                    }
+                    h2:last-child{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+    .movie-container {
+        .movie-wrapper {
+            flex-direction: column;
+            .movie-info {
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 40rem;
+                .movie-title-rating {
+                    flex-direction: column;
+                    .movie-title {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .movie-container {
+        .movie-wrapper {
+            .movie-info {
+                width: 30rem;
+                .movie-title-rating {
+                    .movie-title {
+                        h1 {
+                            font-size: 2rem;
+                        }
+                        margin-bottom: 0.5rem;
+                    }
+                }
+                .movie-description {
+                    width: 100%;
+                }
+                .movie-starring {
+                    h2 {
+                        width: 100%;
+                    }
+                    .genres {
+                     width: 100%;
+                     h2 {
+                        width: auto;
+                     }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .movie-container {
+        .movie-wrapper {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            .movie-image {
+                height: 30rem;
+                width: 20rem;
+            }
+            .movie-info {
+                width: 25rem;
+                .movie-title-rating {
+                    .movie-title {
+                        h1 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .rating {
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+                        .clip-star {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+                    }
+                }
+                .movie-description {
+                    width: 100%;
+                    h1 {
+                        font-size: 0.8rem;
+                        width: 90%;
+                        word-break: break-all;
+                        white-space: pre-wrap;
+                        
+                    }
+                }
+                .movie-starring {
+                    overflow: hidden;
+                    h1 {
+                        font-size: 0.9rem;
+                    }
+                    h2 {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .movie-container {
+        .movie-wrapper {
+            .movie-info {
+                width: 20rem;
+                .movie-starring {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    .genres {
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .movie-container {
+        .movie-wrapper {
+            .movie-image {
+                width: 15rem;
+            }
+            .movie-info {
+                width: 18rem;
+                .overview-trailer {
+                    h1:nth-child(2) {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

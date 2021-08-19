@@ -1,0 +1,191 @@
+.filters-bg {
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  .filters-container {
+    background: rgb(17, 17, 17);
+    width: 55rem;
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    .filters-header {
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1,
+      h2 {
+        color: white;
+      }
+      h1 {
+        font-size: 1.1rem;
+      }
+      h2 {
+        cursor: pointer;
+      }
+    }
+    .filters-sections {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      .filters-genres {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .genres {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          width: 100%;
+          .clear-button,
+          .select-all-button {
+            border-radius: 2rem;
+            cursor: pointer;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            width: 7.5rem;
+            font-size: 0.7rem;
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+            outline: none;
+            background: none;
+            border: none;
+          }
+          .select-all-button {
+              background: rgb(16, 163, 16);
+              color: white;
+              font-weight: 500;
+          }
+          .clear-button {
+            background: rgb(211, 19, 19);
+            color: white;
+            font-weight: 500;
+          }
+          .active-genre {
+              color: black;
+              background: white;
+              border: none;
+          }
+          .genre-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid rgba(219, 216, 216, 0.678);
+            border-radius: 2rem;
+            cursor: pointer;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            width: 7.5rem;
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+            padding-left: 1rem;
+            h1 {
+              font-size: 0.7rem;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+            h1:nth-child(2) {
+              margin-left: 0.5rem;
+            }
+          }
+        }
+      }
+      .filters-other {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5rem;
+        h2 {
+          font-size: 1rem;
+          margin-top: 1rem;
+          opacity: 0.9;
+          font-weight: 400;
+        }
+        input, select {
+          border: none;
+          outline: 1px solid #e50604;
+          background: none;
+          color: white;
+          border-radius: 2rem;
+          margin-top: 1rem;
+          padding-bottom: 0.5rem;
+          padding-top: 0.5rem;
+          padding-left: 1rem;
+          margin-right: 0.5rem;
+          width: 10rem;
+          background-color: black;
+        }
+        .other-filters {
+            display: flex;
+            text-align: center;
+        }
+        .save-changes {
+          margin-top: 2.7rem;
+          color: #e5090e;
+          background: none;
+          outline: none;
+          border: 1px solid #e50604;
+          border-radius: 0.5rem;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .filters-bg {
+        .filters-container {
+            width: 45rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .filters-bg {
+        .filters-container {
+            width: 30rem;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .filters-bg {
+        .filters-container {
+            width: 21rem;
+            .filters-sections {
+                .filters-other {
+                    input, select {
+                        width: 6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .filters-bg {
+        .filters-container {
+            width: 17rem;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.navbar-container .navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10rem;
+  padding-right: 5rem;
+}
+.navbar-container .navbar-wrapper .websites-name {
+  font-family: "Big Shoulders Stencil Text", cursive;
+}
+.navbar-container .navbar-wrapper .navbar-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar-container .navbar-wrapper .navbar-logo img {
+  width: 5rem;
+}
+.navbar-container .navbar-wrapper .navbar-logo h1 {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  color: #e50604;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+.navbar-container .navbar-wrapper .navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+.navbar-container .navbar-wrapper .navbar-buttons .filters-button {
+  background: #E50604;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-right: 3rem;
+  font-weight: bold;
+  color: #f8e6e6;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+  opacity: 0.9;
+}
+.navbar-container .navbar-wrapper .navbar-buttons .filters-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.navbar-container .navbar-wrapper .navbar-buttons .next-movie-button {
+  color: #e5090e;
+  background: none;
+  outline: none;
+  border: 1px solid #e50604;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navbar-container .navbar-wrapper .navbar-buttons .next-movie-button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-container .navbar-wrapper {
+    padding-left: 5rem;
+    padding-right: 2rem;
+  }
+  .navbar-container .navbar-wrapper .navbar-logo img {
+    width: 3rem;
+  }
+  .navbar-container .navbar-wrapper .navbar-logo h1 {
+    font-size: 2rem;
+  }
+  .navbar-container .navbar-wrapper .navbar-buttons .filters-button, .navbar-container .navbar-wrapper .navbar-buttons .next-movie-button {
+    font-size: 1rem;
+  }
+  .navbar-container .navbar-wrapper .navbar-buttons .filters-button {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .navbar-container .navbar-wrapper {
+    padding-left: 2rem;
+  }
+  .navbar-container .navbar-wrapper .navbar-buttons .filters-button, .navbar-container .navbar-wrapper .navbar-buttons .next-movie-button {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .navbar-container .navbar-wrapper .navbar-logo h1 {
+    margin-left: 0.5rem;
+  }
+  .navbar-container .navbar-wrapper .navbar-buttons {
+    flex-direction: column;
+  }
+  .navbar-container .navbar-wrapper .navbar-buttons .filters-button, .navbar-container .navbar-wrapper .navbar-buttons .next-movie-button {
+    padding-left: 0;
+    padding-right: 0;
+    width: 6.5rem;
+  }
+  .navbar-container .navbar-wrapper .navbar-buttons .next-movie-button {
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .navbar-container .navbar-wrapper {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
+  .navbar-container .navbar-wrapper .navbar-buttons .filters-button, .navbar-container .navbar-wrapper .navbar-buttons .next-movie-button {
+    width: 5rem;
+    font-size: 0.6rem;
+  }
+}
+
+/*# sourceMappingURL=Navbar.css.map */
