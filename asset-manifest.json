@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/RandoMovi/static/css/main.5da28502.chunk.css",
+    "main.js": "/RandoMovi/static/js/main.ded7fef8.chunk.js",
+    "main.js.map": "/RandoMovi/static/js/main.ded7fef8.chunk.js.map",
+    "runtime-main.js": "/RandoMovi/static/js/runtime-main.e5cdb2d4.js",
+    "runtime-main.js.map": "/RandoMovi/static/js/runtime-main.e5cdb2d4.js.map",
+    "static/js/2.7700f65f.chunk.js": "/RandoMovi/static/js/2.7700f65f.chunk.js",
+    "static/js/2.7700f65f.chunk.js.map": "/RandoMovi/static/js/2.7700f65f.chunk.js.map",
+    "index.html": "/RandoMovi/index.html",
+    "static/css/main.5da28502.chunk.css.map": "/RandoMovi/static/css/main.5da28502.chunk.css.map",
+    "static/js/2.7700f65f.chunk.js.LICENSE.txt": "/RandoMovi/static/js/2.7700f65f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5cdb2d4.js",
+    "static/js/2.7700f65f.chunk.js",
+    "static/css/main.5da28502.chunk.css",
+    "static/js/main.ded7fef8.chunk.js"
+  ]
+}
