@@ -23,7 +23,7 @@ From your command line:
 $ git clone https://github.com/leodangas/RandoMovi
 
 # Go into the repository
-$ cd client
+$ cd RandoMovi
 
 # Install dependencies
 $ npm install
