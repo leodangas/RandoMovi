@@ -7,6 +7,8 @@ additionally, the person using this application, can specify different criteria 
 
 The application uses The Movie Database (TMDb) API which has stored thousands of different movies in their database!
 
+### Try it out
+[Link to website](https://leodangas.github.io/RandoMovi)
 ## Table of Contents
 
 * [Setup](#setup)
