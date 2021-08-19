@@ -32,6 +32,11 @@ $ npm install
 
 # Run the app
 $ npm start
+
+# You need to get an API key [LINK](https://developers.themoviedb.org/3/getting-started/introduction)
+
+# Define it in src/components/Movie/FetchingMovie.js and src/components/Movie.js
+
 ```
 
 ## Built with
