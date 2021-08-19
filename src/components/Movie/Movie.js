@@ -24,7 +24,7 @@ const Movie = () => {
     setActive("");
   };
   useEffect(() => {
-    const APIKey = "c6e79d5ff2e278a41f6e542761573cc5";
+    const APIKey = "ENTER YOUR API KEY";
     axios
       .get(
         `https://api.themoviedb.org/3/movie/${params.movieId}?api_key=${APIKey}&language=en-US`
@@ -46,7 +46,7 @@ const Movie = () => {
         let director = movieDirector(res.data.crew);
         if(director === undefined) director = {name: 'Unknown'}
         setCrew({cast: cast.join(', '), director: director})
-        return axios.get(`http://api.themoviedb.org/3/movie/${params.movieId}/videos?api_key=${APIKey}`)
+        return axios.get(`https://api.themoviedb.org/3/movie/${params.movieId}/videos?api_key=${APIKey}`)
       }).then(res => {
         let trailerMovie = res.data.results;
         trailerMovie = trailerMovie.find((item) => {

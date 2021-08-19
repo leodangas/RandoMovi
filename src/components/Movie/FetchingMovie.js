@@ -8,7 +8,7 @@ const FetchingMovie = ({ setFindMovie }) => {
   const history = useHistory();
 
   useEffect(() => {
-    const APIKey = "c6e79d5ff2e278a41f6e542761573cc5";
+    const APIKey = "ENTER YOUR API KEY";
 
     const rollNumber = () => {
         let randomNumber = Math.floor(Math.random() * filters.totalPageResults)
