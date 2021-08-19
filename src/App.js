@@ -1,4 +1,4 @@
-import { Redirect, Route, Switch } from "react-router-dom";
+import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Movie from "./components/Movie/Movie";
 import { FiltersProvider } from "./components/FiltersProvider";
@@ -8,6 +8,7 @@ import { FiltersOtherProvider } from "./components/FiltersOtherProvider";
 function App() {
   return (
     <div className="App">
+      <HashRouter basename="/">
       <Switch>
         <FiltersProvider>
           <GenresProvider>
@@ -27,6 +28,7 @@ function App() {
           </GenresProvider>
         </FiltersProvider>
       </Switch>
+      </HashRouter>
     </div>
   );
 }
